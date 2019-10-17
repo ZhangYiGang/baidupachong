@@ -1,0 +1,16 @@
+{
+  "div": {
+    "data-module": "dqa-footer",
+    "class": "c-scroll-indicator",
+    "class": "c-touchable-feedback-content"
+  },
+  "ul": {
+    "voice-action": "switch"
+  },
+  "select": {
+    "voice-action": "select"
+  },
+  "span": {
+    "class":"vid-play-icon vid-thumbnail-icon-large"
+  }
+}
