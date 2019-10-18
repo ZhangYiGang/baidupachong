@@ -10,7 +10,7 @@
 =================================================='''
 import openpyxl
 import sys
-
+import json
 reload(sys)
 sys.setdefaultencoding("utf-8")
 class myexcel():
@@ -51,9 +51,12 @@ class myexcel():
                             same_key = str(col) + "_" + str(row)
                             self.merge_dict[same_key] = str(start_col) + "_" + str(start_row)
 
-    def load_excel(self, filepath):
+    def load_excel(self, filepath, config = None ):
         # 打开excel文件,获取工作簿对象
         wb = openpyxl.load_workbook(filepath)
+        if config is not  None:
+            with open(config) as config_file:
+                config_json = json.load(config_file)
 
         # 从工作薄中获取一个表单(sheet)对象
 
@@ -61,7 +64,7 @@ class myexcel():
         self.get_merge(self.sheet)
         self.max_row = self.sheet.max_row
         self.max_col = self.sheet.max_column
-        self.set_headers()
+        self.set_headers(config_json)
         for row in range(2,self.max_row+1):
             every_dict = {}
             # 从开始第二行,第1行作为header
@@ -92,14 +95,22 @@ class myexcel():
         string = patten.sub(" ", single_info)
         return string.strip()
 
-    def set_headers(self):
+    """
+    设置excel的文件头
+    @:param row 行
+    """
+    def set_headers(self,config_json = None):
+        if config_json is None:
+            row = 1
+        else:
+            row = config_json[""]
         self.excel_keys.append(" ")
-        # 加这个是因为excle取是从1开始的，为了好对应
+        # 加这个是因为excel的取是从1开始的，为了好对应
         for col in range(1, self.max_col+1):
-            self.excel_keys.append(self.sheet.cell(1,col).value)
+            self.excel_keys.append(self.sheet.cell(row,col).value)
 
     def get_excel_json(self):
-        import json
+
         if len(self.excel_array)!=0:
             return json.dumps(self.excel_array)
 
@@ -113,5 +124,5 @@ class myexcel():
 
 if __name__=="__main__":
     myexcel = myexcel()
-    myexcel.load_excel("/Users/bupt/Documents/alading.xlsx")
+    myexcel.load_excel("/Users/bupt/Documents/alading_test.xlsx")
     print myexcel.get_excel_json()
