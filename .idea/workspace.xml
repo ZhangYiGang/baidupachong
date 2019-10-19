@@ -2,71 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="548b91e5-e57a-49c1-ad9d-0b4d6d45e9ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../dumpOut/1.decrypted" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1.xcodeproj/project.pbxproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1.xcodeproj/project.xcworkspace/xcuserdata/bupt.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1.xcodeproj/xcuserdata/bupt.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1.xcodeproj/xcuserdata/bupt.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1/AppDelegate.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1/AppDelegate.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1/Assets.xcassets/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1/Base.lproj/Main.storyboard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1/ViewController.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1/ViewController.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1/main.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1Tests/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1Tests/hello1Tests.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1Tests/testGrammar.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1UITests/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hello1/hello1UITests/hello1UITests.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/.deps/main.Po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/COPYING" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/ChangeLog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/INSTALL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/Makefile.am" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/Makefile.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/NEWS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/aclocal.m4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/compile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/config.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/config.h.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/config.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/config.status" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/configure" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/configure.ac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/depcomp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/install-sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/main.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/missing" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/sshpass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/sshpass.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sshpass-1.06/stamp-h1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/module.modulemap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFramework.xcodeproj/project.pbxproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFramework.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFramework.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFramework.xcodeproj/project.xcworkspace/xcuserdata/bupt.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFramework.xcodeproj/xcuserdata/bupt.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFramework/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFramework/testFramework.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFramework/testHeader.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFramework/testHeader1.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFramework/testOC.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFramework/testSwift.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFrameworkTests/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFrameworkTests/testFrameworkTests.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testFramework/testFrameworkTests/testGrammar.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/baidu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/baidu.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/excel.json" beforeDir="false" afterPath="$PROJECT_DIR$/utils/excel.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/get_info_from_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/get_info_from_excel.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,57 +16,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/baidu$SearchResult.coverage" NAME="SearchResult Coverage Results" MODIFIED="1571233121305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Result" />
+    <SUITE FILE_PATH="coverage/baidu$FormatData.coverage" NAME="FormatData Coverage Results" MODIFIED="1571232751716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/baidu$pytest_for_TestRequest_TestRequest_test_Response.coverage" NAME="pytest for TestRequest.TestRequest.test_Response Coverage Results" MODIFIED="1571143944478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/baidu$pytest_for_TestRequest_TestRequest_test_dict.coverage" NAME="pytest for TestRequest.TestRequest.test_dict Coverage Results" MODIFIED="1571233100043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/baidu$SearchResult.coverage" NAME="SearchResult Coverage Results" MODIFIED="1571233121305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Result" />
     <SUITE FILE_PATH="coverage/baidu$get_info_from_excel.coverage" NAME="get_info_from_excel Coverage Results" MODIFIED="1571306043255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/baidu$FormatData.coverage" NAME="FormatData Coverage Results" MODIFIED="1571232751716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-709377982">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="json" value="2" />
-          <entry key="py" value="15" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JSON" value="2" />
-          <entry key="Python" value="15" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="json" value="110" />
-          <entry key="py" value="2322" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JSON" value="110" />
-          <entry key="Python" value="2322" />
-        </counts>
-      </usages-collector>
-    </session>
+    <SUITE FILE_PATH="coverage/baidupachong$get_info_from_excel.coverage" NAME="get_info_from_excel Coverage Results" MODIFIED="1571479132792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/baidupachong$Main.coverage" NAME="Main Coverage Results" MODIFIED="1571495756986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spider/Request.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <marker date="1571133573657" expanded="true" signature="184:189" ph="..." />
-                <marker date="1571133573657" expanded="true" signature="535:743" ph="..." />
-              </folding>
+            <state relative-caret-position="331">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -134,12 +38,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spider/FormatData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="276">
+              <caret line="24" column="72" lean-forward="true" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
               <folding>
                 <element signature="e#155#184#0" expanded="true" />
-                <marker date="1571190865524" expanded="true" signature="289:294" ph="..." />
-                <marker date="1571190865524" expanded="true" signature="479:497" ph="..." />
               </folding>
             </state>
           </provider>
@@ -148,13 +50,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Result/SearchResult.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="239">
+              <caret line="49" column="29" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="49" selection-end-column="29" />
               <folding>
                 <element signature="e#157#186#0" expanded="true" />
-                <marker date="1571233214048" expanded="true" signature="404:409" ph="..." />
-                <marker date="1571233214048" expanded="true" signature="590:594" ph="..." />
-                <marker date="1571233214048" expanded="true" signature="690:810" ph="..." />
               </folding>
             </state>
           </provider>
@@ -163,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Result/alading.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state>
               <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
@@ -172,33 +71,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/FileUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="253">
               <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding>
-                <marker date="1571143917821" expanded="true" signature="172:177" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/TestRequest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-              <folding>
-                <element signature="e#157#172#0" expanded="true" />
-                <marker date="1571232944080" expanded="true" signature="300:305" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/get_info_from_excel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+            <state relative-caret-position="2921">
+              <caret line="136" column="40" selection-start-line="136" selection-start-column="40" selection-end-line="136" selection-end-column="40" />
               <folding>
                 <element signature="e#275#290#0" expanded="true" />
               </folding>
@@ -207,10 +90,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spider/GetTask.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/excel.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            <state relative-caret-position="23">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -230,6 +134,7 @@
       <find>voice-action</find>
       <find>import</find>
       <find>json</find>
+      <find>excel_keys</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -243,24 +148,20 @@
         <option value="$PROJECT_DIR$/spider/FormatData.py" />
         <option value="$PROJECT_DIR$/spider/SearchResult.py" />
         <option value="$PROJECT_DIR$/Result/ResultException.py" />
-        <option value="$PROJECT_DIR$/test/TestRequest.py" />
         <option value="$PROJECT_DIR$/Result/SearchResult.py" />
         <option value="$PROJECT_DIR$/Result/alading.json" />
-        <option value="$PROJECT_DIR$/utils/get_info_from_excel.py" />
         <option value="$PROJECT_DIR$/utils/excel.json" />
+        <option value="$PROJECT_DIR$/test/TestRequest.py" />
+        <option value="$PROJECT_DIR$/utils/get_info_from_excel.py" />
+        <option value="$PROJECT_DIR$/spider/GetTask.py" />
+        <option value="$PROJECT_DIR$/Main.py" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="783" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -275,27 +176,27 @@
         <subPane>
           <expand>
             <path>
-              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="baidupachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidupachong" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="baidupachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidupachong" type="462c0819:PsiDirectoryNode" />
               <item name="Result" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="baidupachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidupachong" type="462c0819:PsiDirectoryNode" />
               <item name="spider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="baidupachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidupachong" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="baidu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu" type="462c0819:PsiDirectoryNode" />
+              <item name="baidupachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidupachong" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -306,8 +207,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -327,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_info_from_excel">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="FormatData" type="PythonConfigurationType" factoryName="Python">
       <module name="baidu" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -342,6 +245,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/FormatData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="baidu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -427,14 +352,16 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for TestRequest.TestRequest.test_Response" />
       <item itemvalue="Python.FormatData" />
       <item itemvalue="Python.SearchResult" />
-      <item itemvalue="Python tests.pytest for TestRequest.TestRequest.test_dict" />
       <item itemvalue="Python.get_info_from_excel" />
+      <item itemvalue="Python tests.pytest for TestRequest.TestRequest.test_Response" />
+      <item itemvalue="Python tests.pytest for TestRequest.TestRequest.test_dict" />
+      <item itemvalue="Python.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Main" />
         <item itemvalue="Python.get_info_from_excel" />
         <item itemvalue="Python.SearchResult" />
         <item itemvalue="Python tests.pytest for TestRequest.TestRequest.test_dict" />
@@ -452,6 +379,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571130363723</updated>
+      <workItem from="1571456003018" duration="8899000" />
     </task>
     <servers />
   </component>
@@ -487,38 +415,38 @@
       <configuration name="pytest for TestRequest.TestRequest.test_dict" configurationId="tests" />
     </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8899000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="783" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25268096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32706222" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39652678" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39942113" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39518413" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32706222" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -533,137 +461,103 @@
           <line>25</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils/get_info_from_excel.py</url>
-          <line>109</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1160">
-          <caret line="330" selection-start-line="330" selection-end-line="330" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/Request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <marker date="1571133573657" expanded="true" signature="184:189" ph="..." />
-            <marker date="1571133573657" expanded="true" signature="535:743" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/unittest/case.py" />
     <entry file="file://$PROJECT_DIR$/Result/ResultException.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <marker date="1571192050020" expanded="true" signature="193:198" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/json/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="383" selection-start-line="383" selection-end-line="383" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/site-packages/bs4/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="273" selection-start-line="273" selection-end-line="273" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/site-packages/bs4/element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="892" selection-start-line="892" selection-end-line="892" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/FormatData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#155#184#0" expanded="true" />
-            <marker date="1571190865524" expanded="true" signature="289:294" ph="..." />
-            <marker date="1571190865524" expanded="true" signature="479:497" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestRequest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="e#157#172#0" expanded="true" />
-            <marker date="1571232944080" expanded="true" signature="300:305" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/FileUtils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <marker date="1571143917821" expanded="true" signature="172:177" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Result/SearchResult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#157#186#0" expanded="true" />
-            <marker date="1571233214048" expanded="true" signature="404:409" ph="..." />
-            <marker date="1571233214048" expanded="true" signature="590:594" ph="..." />
-            <marker date="1571233214048" expanded="true" signature="690:810" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/json/__init__.py" />
+    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/json/decoder.py" />
+    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/site-packages/bs4/__init__.py" />
+    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/site-packages/bs4/element.py" />
     <entry file="file://$PROJECT_DIR$/Result/alading.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state>
           <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/excel.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        <state relative-caret-position="23">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestRequest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="34" column="44" lean-forward="true" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+          <folding>
+            <element signature="e#157#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/FileUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/get_info_from_excel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        <state relative-caret-position="2921">
+          <caret line="136" column="40" selection-start-line="136" selection-start-column="40" selection-end-line="136" selection-end-column="40" />
           <folding>
             <element signature="e#275#290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/GetTask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/Request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/SearchResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="49" column="29" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="49" selection-end-column="29" />
+          <folding>
+            <element signature="e#157#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/FormatData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="24" column="72" lean-forward="true" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+          <folding>
+            <element signature="e#155#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>

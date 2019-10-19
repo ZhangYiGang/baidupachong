@@ -54,6 +54,7 @@ class myexcel():
     def load_excel(self, filepath, config = None ):
         # 打开excel文件,获取工作簿对象
         wb = openpyxl.load_workbook(filepath)
+        config_json = None
         if config is not  None:
             with open(config) as config_file:
                 config_json = json.load(config_file)
@@ -103,17 +104,26 @@ class myexcel():
         if config_json is None:
             row = 1
         else:
-            row = config_json[""]
+            row = config_json["row"]
         self.excel_keys.append(" ")
         # 加这个是因为excel的取是从1开始的，为了好对应
         for col in range(1, self.max_col+1):
             self.excel_keys.append(self.sheet.cell(row,col).value)
-
+    """
+    如果是excel的话，返回的应该是json的array类型
+    """
     def get_excel_json(self):
 
         if len(self.excel_array)!=0:
             return json.dumps(self.excel_array)
 
+    def get_excel_array(self):
+
+        if len(self.excel_array)!=0:
+            return self.excel_array
+    """
+    获取excel里面key对应的所有值
+    """
     def get_all_value_key(self, key):
         value_array = []
         if not key in self.excel_keys:
@@ -122,7 +132,10 @@ class myexcel():
             value_array.append(every_dict[key])
         return value_array
 
+    def get_excel_key(self, index):
+        if len(self.excel_keys) >1:
+            return self.excel_keys[index]
 if __name__=="__main__":
     myexcel = myexcel()
-    myexcel.load_excel("/Users/bupt/Documents/alading_test.xlsx")
+    myexcel.load_excel("../part1.xlsx")
     print myexcel.get_excel_json()
