@@ -2,7 +2,7 @@ from utils.get_info_from_excel import myexcel
 
 
 class GetTask():
-    def __int__(self):
+    def __init__(self):
         self.task_array = []
     def get_task(self):
         excel = myexcel()
@@ -12,3 +12,4 @@ class GetTask():
         for every_json in json_array:
             value_to_key = every_json[need_key]
             self.task_array.append(value_to_key)
+        return self.task_array

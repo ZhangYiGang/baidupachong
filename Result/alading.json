@@ -1,8 +1,7 @@
 {
   "div": {
-    "data-module": "dqa-footer",
-    "class": "c-scroll-indicator",
-    "class": "c-touchable-feedback-content"
+    "data-module": "dqa-footer|c-fs|unlike",
+    "class": "c-scroll-indicator"
   },
   "ul": {
     "voice-action": "switch"
@@ -11,6 +10,12 @@
     "voice-action": "select"
   },
   "span": {
-    "class":"vid-play-icon vid-thumbnail-icon-large"
+    "class":"vid-play-icon vid-thumbnail-icon-large|hot-publish"
+  },
+  "i":{
+  "class":"wa-yl-music-lyrics-icon"
+},
+  "input": {
+    "class":"c-input"
   }
 }
