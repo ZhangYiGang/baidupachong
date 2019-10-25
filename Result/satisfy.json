@@ -1,0 +1,26 @@
+{
+  "music":{
+ "span":{
+
+       "text":"歌曲聚合|.*歌曲$",
+    "class":"yl-music-bar-white"
+
+  },
+  "div":{
+    "class":"yl-music-icon-play|c-font-sigma"
+  }
+},
+  "video":{
+    "span":{"class":"vid-play-icon-large|vid-thumbnail-icon-large|playIconClass|vid-thumbnail-duration"},
+     "i":{"class":"vid-span-icon|c-icon"}
+
+},
+  "pic":{
+    "smallSize":5000,
+    "bigSize":10000,
+    "dir":"下载图片"
+  }
+
+
+
+}

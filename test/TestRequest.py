@@ -8,9 +8,12 @@
 
 import unittest
 import sys
+import os
 from spider.Request import Request
 from spider.FormatData import FormatData
-from Result.SearchResult import SearchResult
+from Result.ParseResult import ParseResult
+from utils.FileUtils import FileUtils
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 import time
@@ -54,7 +57,7 @@ class TestRequest(unittest.TestCase):
 
     def test_Response(self):
         request =  Request()
-        print request.get_request({'word':"ps培训", 'sa':'tb'})
+        print request.get_baidu_text({'word': "ps培训", 'sa': 'tb'})
 
     def test_dict(self):
         print dict([1,2])
@@ -63,10 +66,10 @@ class TestRequest(unittest.TestCase):
         request = Request()
         count = 0
         formatData = FormatData()
-        searchResult = SearchResult()
+        searchResult = ParseResult()
         # while(True):
         count += 1
-        response = request.get_request({'word': "192.168.0.1", 'sa': 'tb'})
+        response = request.get_baidu_text({'word': "192.168.0.1", 'sa': 'tb'})
 
         formatData.set_BS(response)
         result = formatData.get_first_non_ad()
@@ -89,3 +92,24 @@ class TestRequest(unittest.TestCase):
         # func1(func2)
         # another = func1(func2)
         # another()
+
+    def test_download(self):
+        # 小图片大小2388,4196
+        #大图片18147,5746
+        url = "https://ss0.bdstatic.com/9bA1vGfa2gU2pMbfm9GUKT-w/timg?wisealaddin&size=f200_200&quality=60&sec=1571968181&di=569202accdd1c09b949a0044661e10b0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fbaike%2Fpic%2Fitem%2Fd1160924ab18972b3554ca8ae6cd7b899e510a00.jpg"
+        # url = "https://ss0.bdstatic.com/9bA1vGfa2gU2pMbfm9GUKT-w/timg?wisealaddin&size=f200_200&quality=60&sec=1571968008&di=3c1214067da26669d8110741bcacdf01&src=http%3A%2F%2Fimgsrc.baidu.com%2Fbaike%2Fpic%2Fitem%2F8644ebf81a4c510f9cb0d1976259252dd52aa5c2.jpg"
+        # url = "https://ss0.bdstatic.com/9bA1vGfa2gU2pMbfm9GUKT-w/timg?wisealaddin&size=f960_540&quality=100&sec=1571967937&di=b27050369655e03ca36348d81313bfd1&src=http%3A%2F%2Ft12.baidu.com%2Fit%2Fu%3D3734041358%2C683429700%26fm%3D179%26app%3D35%26f%3DJPEG%3Fw%3D570%26h%3D320%26s%3D74A3BE1E0D424F49561688D1030030BB"
+        # url = "https://ss1.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/2312cafdbeddbfe2d8a62a2d.jpg"
+        # url = "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1447167364,3444772473&fm=179&app=35&f=JPEG?w=120&h=120&s=50343D73056157032ACC74EF03007020"
+        FileUtils.download_from_url(url, "new")
+
+    def test_path(self):
+        print FileUtils.get_project_dir()
+
+    def test_enum(self):
+        from Result.ResultType import ResultType
+        print ResultType.UNSURE.value ==2
+
+    def test_getip(self):
+        from spider.GetIp import GetIp
+        GetIp().get_ip_fromsite()
