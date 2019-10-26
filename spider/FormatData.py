@@ -8,6 +8,9 @@
 from bs4 import BeautifulSoup
 from utils.FileUtils import FileUtils
 class FormatData():
+    """
+    这个类主要用来返回第一个非广告类型的结果
+    """
     item_class_filter_word = "c-result result"
     def __init__(self):
         self.bs = None

@@ -18,6 +18,19 @@ class Request():
             # self.headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"}
         else:
             self.headers = headers
-    def get_request(self, keyword):
+    def get_baidu_text(self, keyword):
         response = requests.get("http://www.baidu.com/s?", params=keyword, headers= self.headers)
         return response.text
+
+    def get_request(self, url):
+        # cookie_string = "PHPSESSID=nalnraigd8p5g3j0r5kp3uk6d1; Hm_lvt_d39191a0b09bb1eb023933edaa468cd5=1571712763,1571994401; Hm_lpvt_d39191a0b09bb1eb023933edaa468cd5=1571995862"
+        # cookies = {}
+        # for raw_cookie in cookie_string.split(";"):
+        #     keyAndValue = raw_cookie.split("=")
+        #     key = keyAndValue[0]
+        #     value = keyAndValue[1]
+        #     cookies[key]= value
+
+        response = requests.get(url
+                                , headers=self.headers)
+        return response
