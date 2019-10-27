@@ -12,7 +12,7 @@ import os
 from spider.Request import Request
 from spider.FormatData import FormatData
 from Result.ParseResult import ParseResult
-from utils.FileUtils import FileUtils
+from utils.FileUtil import FileUtils
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -111,5 +111,24 @@ class TestRequest(unittest.TestCase):
         print ResultType.UNSURE.value ==2
 
     def test_getip(self):
+        from utils.ConsumeTimeUtil import ExecuteTime
         from spider.GetIp import GetIp
-        GetIp().get_ip_fromsite()
+        consume_time = GetIp().get_ip_array(0)
+        print consume_time
+
+    def test_time(self):
+        nowtime = 1571999440
+        # 872
+        import time
+        a= time.time()
+        print round(a,3)
+        print round(1.23,3)
+        print round(1.234,3)
+
+        # timearray = time.localtime(nowtime)
+        # print time.strftime("%Y--%m--%d %H:%M:%S",timearray)
+
+    def test_re(self):
+        import re
+        result  = re.match( re.compile(r"((\d{2,3}\.){3})\d{2,3}"),"10.108.115.57")
+        print result.groups()

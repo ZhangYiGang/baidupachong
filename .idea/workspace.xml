@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f8ca59b9-6eab-4a20-8294-f83c3bc70229" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/baidu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/baidu.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result/ParseResult.py" beforeDir="false" afterPath="$PROJECT_DIR$/Result/ParseResult.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actual.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/actual.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/FormatData.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/FormatData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/GetIp.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/GetIp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/GetTask.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/GetTask.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/Request.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/Request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/FileUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/FileUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/get_info_from_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ExcelUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/11.0.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/ab77b6ea7f3fbf79.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/cm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/index.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/push.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www.baidu.com服务器iP www.baidu.com域名解析 www.baidu.comiP查询 www.baidu.com域名iP查询_files/write.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/下载图片/0a00.jp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/下载图片/0a00.jp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/下载图片/tips.pn.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/下载图片/tips.pn.jpg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/baidu$FormatData.coverage" NAME="FormatData Coverage Results" MODIFIED="1571232751716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
+    <SUITE FILE_PATH="coverage/baidupachong$pytest_for_TestRequest_TestRequest_test_time.coverage" NAME="pytest for TestRequest.TestRequest.test_time Coverage Results" MODIFIED="1572061201682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/baidu$pytest_for_TestRequest_TestRequest_test_Response.coverage" NAME="pytest for TestRequest.TestRequest.test_Response Coverage Results" MODIFIED="1571143944478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/baidu$pytest_for_TestRequest_TestRequest_test_dict.coverage" NAME="pytest for TestRequest.TestRequest.test_dict Coverage Results" MODIFIED="1571233100043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/baidupachong$pytest_for_TestRequest_TestRequest_test_re.coverage" NAME="pytest for TestRequest.TestRequest.test_re Coverage Results" MODIFIED="1572068789880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/baidupachong$pytest_for_TestRequest_TestRequest_test_getip.coverage" NAME="pytest for TestRequest.TestRequest.test_getip Coverage Results" MODIFIED="1572078802364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/baidu$SearchResult.coverage" NAME="SearchResult Coverage Results" MODIFIED="1571233121305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Result" />
+    <SUITE FILE_PATH="coverage/baidu$get_info_from_excel.coverage" NAME="get_info_from_excel Coverage Results" MODIFIED="1571306043255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/baidupachong$get_info_from_excel.coverage" NAME="get_info_from_excel Coverage Results" MODIFIED="1571479132792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/baidupachong$pytest_for_TestRequest_TestRequest_test_count.coverage" NAME="pytest for TestRequest.TestRequest.test_count Coverage Results" MODIFIED="1571558835087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/baidupachong$ParseResult.coverage" NAME="ParseResult Coverage Results" MODIFIED="1572085253458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Result" />
+    <SUITE FILE_PATH="coverage/baidupachong$Main.coverage" NAME="Main Coverage Results" MODIFIED="1571557078013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spider/FormatData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+              <folding>
+                <element signature="e#155#184#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Result/domin.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" selection-start-column="8" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Result/ParseResult.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="154" column="19" lean-forward="true" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/ConsumeTimeUtil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Result/alading.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <element signature="e#14#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Result/ResultException.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/FileUtil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spider/GetTask.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/spider/Request.py" />
+        <option value="$PROJECT_DIR$/utils/TimeUtil.py" />
+        <option value="$PROJECT_DIR$/test/TestRequest.py" />
+        <option value="$PROJECT_DIR$/utils/ConsumeTimeUtil.py" />
+        <option value="$PROJECT_DIR$/spider/GetIp.py" />
+        <option value="$PROJECT_DIR$/Result/domin.txt" />
+        <option value="$PROJECT_DIR$/Result/ParseResult.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="20" />
+    <option name="width" value="1440" />
+    <option name="height" value="785" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="baidupachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidupachong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidupachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidupachong" type="462c0819:PsiDirectoryNode" />
+              <item name="Result" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidupachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidupachong" type="462c0819:PsiDirectoryNode" />
+              <item name="spider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidupachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidupachong" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidupachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidupachong" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\pythonproject\baidupachong" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.ParseResult">
+    <configuration name="ParseResult" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="baidu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Result" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Result/ParseResult.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for TestRequest.TestRequest.test_getip" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="baidu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestRequest.TestRequest.test_getip&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for TestRequest.TestRequest.test_re" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="baidu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestRequest.TestRequest.test_re&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for TestRequest.TestRequest.test_time" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="baidu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestRequest.TestRequest.test_time&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.pytest for TestRequest.TestRequest.test_getip" />
+      <item itemvalue="Python tests.pytest for TestRequest.TestRequest.test_time" />
+      <item itemvalue="Python tests.pytest for TestRequest.TestRequest.test_re" />
+      <item itemvalue="Python.ParseResult" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ParseResult" />
+        <item itemvalue="Python tests.pytest for TestRequest.TestRequest.test_getip" />
+        <item itemvalue="Python tests.pytest for TestRequest.TestRequest.test_re" />
+        <item itemvalue="Python tests.pytest for TestRequest.TestRequest.test_time" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="548b91e5-e57a-49c1-ad9d-0b4d6d45e9ff" name="Default Changelist" comment="" />
+      <created>1571130363723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571130363723</updated>
+      <workItem from="1571456003018" duration="9175000" />
+      <workItem from="1571539815501" duration="12040000" />
+      <workItem from="1572059108882" duration="20325000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_for_TestRequest_TestRequest_test_getip - 2019.10.26 at 14h 19m 35s.xml">
+      <configuration name="pytest for TestRequest.TestRequest.test_getip" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_TestRequest_TestRequest_test_getip - 2019.10.26 at 14h 20m 13s.xml">
+      <configuration name="pytest for TestRequest.TestRequest.test_getip" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_TestRequest_TestRequest_test_getip - 2019.10.26 at 14h 21m 22s.xml">
+      <configuration name="pytest for TestRequest.TestRequest.test_getip" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_TestRequest_TestRequest_test_getip - 2019.10.26 at 16h 23m 22s.xml">
+      <configuration name="pytest for TestRequest.TestRequest.test_getip" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_TestRequest_TestRequest_test_getip - 2019.10.26 at 16h 27m 04s.xml">
+      <configuration name="pytest for TestRequest.TestRequest.test_getip" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_TestRequest_TestRequest_test_getip - 2019.10.26 at 16h 27m 25s.xml">
+      <configuration name="pytest for TestRequest.TestRequest.test_getip" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_TestRequest_TestRequest_test_getip - 2019.10.26 at 16h 28m 12s.xml">
+      <configuration name="pytest for TestRequest.TestRequest.test_getip" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_TestRequest_TestRequest_test_getip - 2019.10.26 at 16h 29m 24s.xml">
+      <configuration name="pytest for TestRequest.TestRequest.test_getip" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_TestRequest_TestRequest_test_getip - 2019.10.26 at 16h 29m 31s.xml">
+      <configuration name="pytest for TestRequest.TestRequest.test_getip" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_TestRequest_TestRequest_test_getip - 2019.10.26 at 16h 33m 24s.xml">
+      <configuration name="pytest for TestRequest.TestRequest.test_getip" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="41540000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25938338" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39518413" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3243626" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/TestRequest.py</url>
+          <line>133</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/GetIp.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Result/ParseResult.py</url>
+          <line>159</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/unittest/case.py" />
+    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/json/__init__.py" />
+    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/json/decoder.py" />
+    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/site-packages/bs4/__init__.py" />
+    <entry file="file://$USER_HOME$/.pyenv/versions/2.7.10/lib/python2.7/site-packages/bs4/element.py" />
+    <entry file="file://$PROJECT_DIR$/Result/SearchResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <folding>
+            <element signature="e#157#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/1843532041/time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2479">
+          <caret line="149" column="4" selection-start-line="149" selection-start-column="4" selection-end-line="149" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda2/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="328" selection-start-line="328" selection-end-line="328" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/Request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda2/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="131" column="15" lean-forward="true" selection-start-line="131" selection-start-column="15" selection-end-line="131" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baiduIp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/TimeUtil.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestRequest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="116" column="26" selection-start-line="116" selection-start-column="26" selection-end-line="116" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/ExcelUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2507">
+          <caret line="136" column="40" selection-start-line="136" selection-start-column="40" selection-end-line="136" selection-end-column="40" />
+          <folding>
+            <element signature="e#275#290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/GetIp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+          <folding>
+            <element signature="e#197#224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/ResultType.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/ResultException.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/ConsumeTimeUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/excel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/FileUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/GetTask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/alading.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/FormatData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="e#155#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#14#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="1082" selection-start-line="1082" selection-end-line="1082" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/domin.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Result/ParseResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="154" column="19" lean-forward="true" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

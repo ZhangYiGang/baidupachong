@@ -3,7 +3,7 @@
 # @Time    : 2019/10/15 20:47
 # @Author  : zyg
 # @Site    : 
-# @File    : FileUtils.py
+# @File    : FileUtil.py
 # @Software: PyCharm
 import urllib
 import os

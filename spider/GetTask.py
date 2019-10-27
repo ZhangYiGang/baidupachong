@@ -1,4 +1,4 @@
-from utils.get_info_from_excel import myexcel
+from utils.ExcelUtil import myexcel
 
 
 class GetTask():

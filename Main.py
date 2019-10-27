@@ -5,7 +5,9 @@ from spider.FormatData import FormatData
 from Result.ParseResult import ParseResult
 import os
 import sys
+import requests
 reload(sys)
+requests.adapters.DEFAULT_RETRIES = 5
 sys.setdefaultencoding('utf-8')
 def execute():
     task_array = GetTask().get_task()

@@ -7,7 +7,7 @@
 # @Software: PyCharm
 from bs4 import BeautifulSoup
 from ResultException import ResultException
-from utils.FileUtils import  FileUtils
+from utils.FileUtil import  FileUtils
 from spider.FormatData import FormatData
 from Result.ResultType import ResultType
 import json
@@ -34,8 +34,10 @@ class ParseResult():
     """
     def set_result(self, result):
         self.parse = result
+        # 顺便清除所有数据，主要是类型
         self.type = 0
-            # BeautifulSoup(text, "html.parser")
+        self.picture_type = 0
+
 
     #从json里面获取数据，如果一个都没有的话，则认为它不是阿拉丁
     def judge_type(self):
@@ -90,9 +92,10 @@ class ParseResult():
 
     """
     判断类型里面是否有视频，图片，歌曲等
+    只有在阿拉丁形式下才会判断有没有视频和歌曲等
     """
     def get_satsify_type(self):
-        # 只有在阿拉丁形式下才会判断有没有视频和歌曲等
+
         self.judge_picture_type()
         if self.type ==2:
             has_music_flag = self.judge_media_type("music")
@@ -111,7 +114,19 @@ class ParseResult():
             img_path = FileUtils.download_from_url(url, dir)
             img_size = FileUtils.get_file_size(img_path)
             size_list.append( img_size>= big_size and ResultType.YES or  img_size<= small_size and ResultType.NO  or {ResultType.UNSURE:img_size}  )
-
+        middle_type_count = 0
+        for result_type in size_list:
+                if result_type == ResultType.YES:
+                    self.picture_type = 1
+                    break
+                elif result_type == ResultType.NO:
+                    continue
+                else:
+                    middle_type_count+=1
+        #         中等图片个数大于1也认为是图文模式
+        if self.picture_type ==0 and middle_type_count>1:
+            self.picture_type =1
+        return self.picture_type
 
     '''
     搜寻需要的文本
@@ -124,13 +139,39 @@ class ParseResult():
               return result.group(0)
         return None
 
+    # 获取到url
+    def get_url(self):
+        # 第一个获取到的url
+        url_array= []
+        try:
+            data_log = self.parse.attrs["data-log"]
+            html_json = data_log.encode("utf-8").replace("\'","\"")
+            url_data_log = json.loads(html_json)["mu"]
+            url_array.append(url_data_log)
+        except Exception as e:
+            # 在这里处理json的解析问题
+            pass
+        content = self.parse.find("div",attrs={"class":"c-result-content"})
+        if content:
+            # 取出第一个内容
+            content = next(content.children)
+            if "rl-link-href" in content.attrs:
+               url_data_href = content.attrs["rl-link-href"]
+               print url_data_href
+        else:
+            # tood 这里要加的是找到url
+            pass
+        pass
+
+
 if __name__ == '__main__':
-    text = FileUtils.get_text_from_file("/Users/bupt/test/baidu/picture.html")
+    text = FileUtils.get_text_from_file("../picture.html")
     formatData = FormatData()
     formatData.set_BS(text)
     result = formatData.get_first_non_ad()
     # formatData.get_useful_judge(result)
     searchResult = ParseResult()
     searchResult.set_result(result)
-    searchResult.get_satsify_type()
+    # print searchResult.judge_picture_type()
+    print searchResult.get_url()
 

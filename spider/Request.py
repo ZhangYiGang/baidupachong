@@ -22,15 +22,7 @@ class Request():
         response = requests.get("http://www.baidu.com/s?", params=keyword, headers= self.headers)
         return response.text
 
-    def get_request(self, url):
-        # cookie_string = "PHPSESSID=nalnraigd8p5g3j0r5kp3uk6d1; Hm_lvt_d39191a0b09bb1eb023933edaa468cd5=1571712763,1571994401; Hm_lpvt_d39191a0b09bb1eb023933edaa468cd5=1571995862"
-        # cookies = {}
-        # for raw_cookie in cookie_string.split(";"):
-        #     keyAndValue = raw_cookie.split("=")
-        #     key = keyAndValue[0]
-        #     value = keyAndValue[1]
-        #     cookies[key]= value
-
-        response = requests.get(url
-                                , headers=self.headers)
+    def get_request(self, url,headers):
+        headers = dict(headers.items()+self.headers.items())
+        response = requests.get(url,headers = headers)
         return response

@@ -6,7 +6,7 @@
 # @File    : FormatData.py
 # @Software: PyCharm
 from bs4 import BeautifulSoup
-from utils.FileUtils import FileUtils
+from utils.FileUtil import FileUtils
 class FormatData():
     """
     这个类主要用来返回第一个非广告类型的结果
