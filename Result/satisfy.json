@@ -2,7 +2,7 @@
   "music":{
  "span":{
 
-       "text":"歌曲聚合|.*歌曲$",
+       "text":"歌曲聚合|.*歌曲$|音乐中心",
     "class":"yl-music-bar-white"
 
   },
@@ -12,13 +12,15 @@
 },
   "video":{
     "span":{"class":"vid-play-icon-large|vid-thumbnail-icon-large|playIconClass|vid-thumbnail-duration"},
-     "i":{"class":"vid-span-icon|c-icon"}
+     "i":{"class":"vid-span-icon"},
+    "all":{"all":"b_palyer"}
 
 },
   "pic":{
     "smallSize":5000,
     "bigSize":10000,
-    "dir":"下载图片"
+    "dir":"下载图片",
+    "grep":"wenda-abstract-share"
   }
 
 

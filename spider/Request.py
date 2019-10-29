@@ -6,10 +6,19 @@
 # @File    : Request.py
 # @Software: PyCharm
 import requests
+import random
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 class Request():
+    ip_array = []
     def __init__(self):
         self.set_headers(None)
         pass
+    @classmethod
+    def set_ip_array(cls, ip_array):
+        Request.ip_array = ip_array
 
     def set_headers(self, headers):
         if headers is None:
@@ -19,8 +28,17 @@ class Request():
         else:
             self.headers = headers
     def get_baidu_text(self, keyword):
-        response = requests.get("http://www.baidu.com/s?", params=keyword, headers= self.headers)
-        return response.text
+        if Request.ip_array:
+            baidu_url = Request.ip_array[random.randint(0, len(Request.ip_array)-1)]
+        else:
+            baidu_url = "www.baidu.com"
+        response = requests.get("http://"+baidu_url+"/s?", params=keyword, headers= self.headers)
+        if response.status_code ==200 and "来自百度的搜索结果" in  response.text:
+
+              return response.text
+        else:
+            print(baidu_url+"这里有问题")
+            return None
 
     def get_request(self, url,headers):
         headers = dict(headers.items()+self.headers.items())

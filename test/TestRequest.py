@@ -14,19 +14,18 @@ from spider.FormatData import FormatData
 from Result.ParseResult import ParseResult
 from utils.FileUtil import FileUtils
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
+# sys.setdefaultencoding('utf-8')
 import time
 # 如果执行的是func1，那么会返回一个func2的函数
 def func1(func2):
     # 测试装饰器外层函数运行几次
     time1 = time.time()
-    print "qwer"
+    # print "qwer"
     # 外层函数从来没运行过
     def wrapper(*args,**kwargs):
         start_time = time.time()
-        print "开始时间"+str(time1)
-        print start_time
+        # print "开始时间"+str(time1)
+        # print start_time
         return func2(*args,**kwargs)
     return wrapper
 def outer(level):
@@ -42,14 +41,15 @@ def outer(level):
     return middle
 # 等到都成功之后就将wrapper这个函数名复制给原函数
 def func2():
-    print "asdf"
+    print("asdf")
 @outer(level=1)
 def test_dector():
+    pass
     # 为什么装饰器里的外层函数不执行呢
-    print "test1"
+    # print "test1"
 @func1
 def test_dector2():
-    print "test_dector2"
+    print("test_dector2")
 
 class TestRequest(unittest.TestCase):
     def setUp(self):
@@ -57,10 +57,10 @@ class TestRequest(unittest.TestCase):
 
     def test_Response(self):
         request =  Request()
-        print request.get_baidu_text({'word': "ps培训", 'sa': 'tb'})
+        print(request.get_baidu_text({'word': "ps培训", 'sa': 'tb'}))
 
     def test_dict(self):
-        print dict([1,2])
+        print(dict([1,2]))
 
     def test_count(self):
         request = Request()
@@ -76,15 +76,15 @@ class TestRequest(unittest.TestCase):
         # formatData.get_useful_judge(result)
         searchResult.set_result(result)
         type = searchResult.judge_type()
-        print "结果"+str(type)
+        print("结果"+str(type))
 
     def test_clouse(self):
         test_dector
         # test_dector()
-        print test_dector.func_name
-        print test_dector.__name__
-        print test_dector.__closure__[0].cell_contents
-        print test_dector.__closure__[1].cell_contents
+        print(test_dector.func_name)
+        print(test_dector.__name__)
+        print( test_dector.__closure__[0].cell_contents)
+        print(test_dector.__closure__[1].cell_contents)
 
         # test_dector2()
         # time.sleep(0.2)
@@ -104,26 +104,26 @@ class TestRequest(unittest.TestCase):
         FileUtils.download_from_url(url, "new")
 
     def test_path(self):
-        print FileUtils.get_project_dir()
+        print(FileUtils.get_project_dir())
 
     def test_enum(self):
         from Result.ResultType import ResultType
-        print ResultType.UNSURE.value ==2
+        print(ResultType.UNSURE.value ==2)
 
     def test_getip(self):
-        from utils.ConsumeTimeUtil import ExecuteTime
-        from spider.GetIp import GetIp
-        consume_time = GetIp().get_ip_array(0)
-        print consume_time
+        from utils.TimeUtil import ExecuteTime
 
+    def test_json(self):
+        data = {"time": 123}
+        print(str(data))
     def test_time(self):
         nowtime = 1571999440
         # 872
         import time
         a= time.time()
-        print round(a,3)
-        print round(1.23,3)
-        print round(1.234,3)
+        print(round(a,3))
+        print(round(1.23,3))
+        print(round(1.234,3))
 
         # timearray = time.localtime(nowtime)
         # print time.strftime("%Y--%m--%d %H:%M:%S",timearray)
@@ -131,4 +131,22 @@ class TestRequest(unittest.TestCase):
     def test_re(self):
         import re
         result  = re.match( re.compile(r"((\d{2,3}\.){3})\d{2,3}"),"10.108.115.57")
-        print result.groups()
+        print(result.groups())
+
+    def test_single_task(self):
+        request = Request()
+        text = request.get_baidu_text({'word': "植物传播种子的方法"})
+        if text:
+            searchResult = ParseResult()
+            formatData = FormatData()
+            formatData.set_BS(text)
+            result = formatData.get_first_non_ad()
+            # formatData.get_useful_judge(result)
+            searchResult.set_result(result)
+            type = searchResult.judge_type()
+            stastify_type_explain_string = searchResult.judge_satsify_type()
+            print("类型是" + str(type) + "满足类型" + stastify_type_explain_string)
+
+    def test_divide(self):
+        # python的除法需要注意添加float
+        print( 1 if float(4)/float(5) >0.1 else 0 )

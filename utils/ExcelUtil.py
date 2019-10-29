@@ -138,4 +138,4 @@ class myexcel():
 if __name__=="__main__":
     myexcel = myexcel()
     myexcel.load_excel("../part1.xlsx")
-    print myexcel.get_excel_json()
+    print(myexcel.get_excel_json())

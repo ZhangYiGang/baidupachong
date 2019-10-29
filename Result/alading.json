@@ -10,7 +10,7 @@
     "voice-action": "select"
   },
   "span": {
-    "class":"vid-play-icon vid-thumbnail-icon-large|hot-publish"
+    "class":"vid-play-icon vid-thumbnail-icon-large|hot-publish|c-color-noclick"
   },
   "i":{
   "class":"wa-yl-music-lyrics-icon"

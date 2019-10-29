@@ -11,7 +11,7 @@
 from Request import Request
 from Result.ResultException import ResultException
 from utils.FileUtil import FileUtils
-from utils.ConsumeTimeUtil import ExecuteTime
+from utils.TimeUtil import ExecuteTime
 import time
 import json,re
 ip_file_name = "baiduIp.txt"
@@ -56,14 +56,19 @@ class GetIp():
                 self.ip_already = True
     @ExecuteTime
     def get_ip_array(self, count):
+        # 将每次执行完成的时间写进文件里面
+        # 如果五次都执行失败了的话，则ip_array为空
         if self.ip_already :
-            return
-                # self.ip_array
+            self.ip_already = False
+            return True
         else:
             self.get_ip_fromsite()
             count+=1
             if count>5:
+                self.ip_already = True
                 self.ip_array =  []
-            return self.get_ip_array(count)
+            self.get_ip_array(count)
+            return False
+
 
 

@@ -13,6 +13,9 @@ from Result.ResultType import ResultType
 import json
 import os,re
 class ParseResult():
+
+    Satisfy_type_array = [ResultType.MUSIC, ResultType.MUSIC_2, ResultType.PICTURE , ResultType.ONLY_WORD, ResultType.VIDEO_AND_WORD, ResultType.VIDEO_AND_WORD_2, ResultType.ONLY_WORD1, ResultType.MUSIC_3]
+    Satisfy_type_explain_string = ["音乐1","音乐2","图片1","只有文字","视频1","视频2", "只有文字1","音乐3"]
     """
     @:param type 表示处理结果类型 0:未知 1:自然结果 2:阿拉丁
     """
@@ -69,11 +72,14 @@ class ParseResult():
         has_satisfy_count = 0
         type_json = self.satisfy_json[type]
         for html_label,css_dict in type_json.items():
-            # html_label是前面的span或者div，cssdict是类型
+            # html_label是前面的span或者div，cssdict是字典
             for items in css_dict.items():
                 for every_value in items[1].split("|"):
                     flag_count +=1
-                    if items[0]=="text":
+                    if items[0] == "all":
+                        item_result = self.parse.find(items[1])
+                    #     all代表职匹配这个div（这类）
+                    elif items[0]=="text":
                         item_result = self.parse.find_all(re.compile(html_label))
                         item_result = self.search_text(item_result, every_value)
                         # item_result = self.parse.find_all(text= re.compile(every_value.encode("utf-8")))
@@ -88,19 +94,28 @@ class ParseResult():
                         has_satisfy_count+=1
                         continue
                         # break
-        print has_satisfy_count,flag_count
+        return 1 if float(has_satisfy_count)/float(flag_count) >0.1 else 0
 
     """
     判断类型里面是否有视频，图片，歌曲等
     只有在阿拉丁形式下才会判断有没有视频和歌曲等
     """
-    def get_satsify_type(self):
-
-        self.judge_picture_type()
+    def judge_satsify_type(self):
+        has_music_flag = 0
+        has_video_flag = 0
+        has_picture_flag = self.judge_picture_type()
+        if has_picture_flag ==1:
+            # 如果有大图的话认为是阿拉丁形式
+            self.type =2
         if self.type ==2:
             has_music_flag = self.judge_media_type("music")
             has_video_flag = self.judge_media_type("video")
-
+        self.satisfy_type = [self.type, has_picture_flag, has_music_flag, has_video_flag]
+        for result_type in ParseResult.Satisfy_type_array:
+            if result_type.value ==  self.satisfy_type:
+                #
+                return ParseResult.Satisfy_type_explain_string[ParseResult.Satisfy_type_array.index(result_type)]
+        return ".".join(str(self.satisfy_type))
 
     def judge_picture_type(self):
         img_results = self.parse.find_all(re.compile(r"img.*"))
@@ -108,12 +123,15 @@ class ParseResult():
         dir = pic_related_json["dir"]
         big_size = pic_related_json["bigSize"]
         small_size = pic_related_json["smallSize"]
+        grep_words = pic_related_json["grep"]
         size_list = []
         for img_result in img_results:
-            url = img_result.attrs["src"]
-            img_path = FileUtils.download_from_url(url, dir)
-            img_size = FileUtils.get_file_size(img_path)
-            size_list.append( img_size>= big_size and ResultType.YES or  img_size<= small_size and ResultType.NO  or {ResultType.UNSURE:img_size}  )
+            is_in_grep_element = self.grep_picture_type(grep_words, img_result)
+            if is_in_grep_element:
+                url = img_result.attrs["src"]
+                img_path = FileUtils.download_from_url(url, dir)
+                img_size = FileUtils.get_file_size(img_path)
+                size_list.append( img_size>= big_size and ResultType.YES or  img_size<= small_size and ResultType.NO  or {ResultType.UNSURE:img_size}  )
         middle_type_count = 0
         for result_type in size_list:
                 if result_type == ResultType.YES:
@@ -139,7 +157,7 @@ class ParseResult():
               return result.group(0)
         return None
 
-    # 获取到url
+    # 获取到url 这个通常只给阿拉丁使用
     def get_url(self):
         # 第一个获取到的url
         url_array= []
@@ -156,12 +174,20 @@ class ParseResult():
             # 取出第一个内容
             content = next(content.children)
             if "rl-link-href" in content.attrs:
+               #  还有rl-link-data-url
                url_data_href = content.attrs["rl-link-href"]
-               print url_data_href
+               print(url_data_href)
         else:
             # tood 这里要加的是找到url
             pass
         pass
+
+    def grep_picture_type(self, grep_words, img_result):
+        for grep_word in grep_words.split("|"):
+            for img_parent in img_result.parents:
+                if "class" in img_parent.attrs and grep_word in img_parent.attrs["class"]:
+                    return False
+        return True
 
 
 if __name__ == '__main__':
@@ -173,5 +199,5 @@ if __name__ == '__main__':
     searchResult = ParseResult()
     searchResult.set_result(result)
     # print searchResult.judge_picture_type()
-    print searchResult.get_url()
+    # print searchResult.get_url()
 

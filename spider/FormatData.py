@@ -26,7 +26,12 @@ class FormatData():
         #         print index
     def get_useful_judge(self, result):
         switch_btn = result.find_all("ul", attrs = {"voice-action": "switch"})
-        print switch_btn
+        # print switch_btn
+
+    def get_article(self):
+        result = self.get_first_non_ad()
+        atricle = result.find("article")
+        return atricle
 if __name__ == '__main__':
     text = FileUtils.get_text_from_file("/Users/bupt/untitled.html")
     formatData = FormatData()

@@ -8,7 +8,7 @@
 class WordUtil():
     @classmethod
     def del_transform_in_json(cls, text):
-        print text
+        print(text)
         if r"\\" in text:
             return text.replace(r'\\',"\\")
         else:
@@ -18,5 +18,5 @@ if __name__== "__main__":
 
 
     result = re.compile(u".*歌曲$").match(    '强军战歌 - 歌曲')
-    print result.group(0)
+    print(result.group(0))
     # print WordUtil().del_transform_in_json(r"\\s")

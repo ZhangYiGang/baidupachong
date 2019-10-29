@@ -6,7 +6,10 @@
 # @File    : FileUtil.py
 # @Software: PyCharm
 import urllib
-import os
+import os,time
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 class FileUtils():
     @classmethod
     def get_text_from_file(cls, filename):
@@ -19,14 +22,20 @@ class FileUtils():
             dir = FileUtils.get_project_dir() + dir
             if not os.path.exists(dir):
                 os.mkdir(dir)
-            res = urllib.urlopen(url).read()
-            path = dir +os.sep+ url[-8:-1] + ".jpg"
-            with open(path, "w") as write_file:
-                write_file.write(res)
-        return path
+            try:
+               res =        urllib.urlopen(url.encode("utf-8")).read()
+               # path = dir +os.sep+ url[-8:-1] + ".jpg"
+               path = dir +os.sep +str(time.time())+".jpg"
+               with open(path, "w") as write_file:
+                    write_file.write(res)
+               return path
+            except Exception as e:
+                print(e.message)
+        return None
     @classmethod
     def  get_file_size(self, path ):
-        if os.path.exists(path):
+        if path:
+           if os.path.exists(path):
                 file_size = os.path.getsize(path)
                 return  file_size
         #     返回文件大小为0代表默认它是小文件
@@ -37,3 +46,8 @@ class FileUtils():
         path = os.path.abspath(__file__)
         project_dir = os.sep.join(path.split(os.sep)[0:-2])
         return project_dir+os.sep
+
+    @classmethod
+    def write_data_to_file(cls, filename, data):
+        with open(filename, mode='w') as file:
+            file.write(data)
