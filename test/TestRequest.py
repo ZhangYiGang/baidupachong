@@ -137,7 +137,7 @@ class TestRequest(unittest.TestCase):
 
     def test_single_task(self):
         request = Request()
-        text = request.get_baidu_text({'word': "微笑狗"})
+        text = request.get_baidu_text({'word': "植物传播种子的办法"})
         if text:
             searchResult = ParseResult()
             formatData = FormatData()
