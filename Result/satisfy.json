@@ -13,6 +13,7 @@
   "video":{
     "span":{"class":"vid-play-icon-large|vid-thumbnail-icon-large|playIconClass|vid-thumbnail-duration"},
      "i":{"class":"vid-span-icon"},
+    "div":{"class":"c-img-circle-mask|c-btn-circle-big"},
     "all":{"all":"b_palyer"}
 
 },

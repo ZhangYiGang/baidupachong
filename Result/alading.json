@@ -1,7 +1,8 @@
 {
   "div": {
     "data-module": "dqa-footer|c-fs|unlike",
-    "class": "c-scroll-indicator"
+    "class": "c-scroll-indicator",
+    "rl-type":"stop"
   },
   "ul": {
     "voice-action": "switch"

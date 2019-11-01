@@ -53,7 +53,8 @@ class myexcel():
 
     def load_excel(self, filepath, config = None ):
         # 打开excel文件,获取工作簿对象
-        wb = openpyxl.load_workbook(filepath)
+        self.filepath = filepath
+        self.wb = openpyxl.load_workbook(filepath)
         config_json = None
         if config is not  None:
             with open(config) as config_file:
@@ -61,7 +62,7 @@ class myexcel():
 
         # 从工作薄中获取一个表单(sheet)对象
 
-        self.sheet = wb.get_active_sheet()
+        self.sheet = self.wb.get_active_sheet()
         self.get_merge(self.sheet)
         self.max_row = self.sheet.max_row
         self.max_col = self.sheet.max_column
@@ -135,7 +136,13 @@ class myexcel():
     def get_excel_key(self, index):
         if len(self.excel_keys) >1:
             return self.excel_keys[index]
+
+    def write_cell(self, row, column, result):
+        self.sheet.cell(row, column).value = result
+        self.wb.save(self.filepath)
+        #
 if __name__=="__main__":
     myexcel = myexcel()
     myexcel.load_excel("../part1.xlsx")
+    myexcel.write_cell(2,1,"在在在在造句")
     print(myexcel.get_excel_json())

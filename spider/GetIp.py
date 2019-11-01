@@ -13,7 +13,7 @@ from Result.ResultException import ResultException
 from utils.FileUtil import FileUtils
 from utils.TimeUtil import ExecuteTime
 import time
-import json,re
+import json,re,os,subprocess
 ip_file_name = "baiduIp.txt"
 class GetIp():
     # /这个是不包含时间的，因为这个请求需要绑定现在时间 经过解析时间戳是13位的 比正常时间多了3位
@@ -69,6 +69,26 @@ class GetIp():
                 self.ip_array =  []
             self.get_ip_array(count)
             return False
+
+    def del_unfluent_ip(self):
+        ip_array = FileUtils.get_text_from_file(FileUtils.get_project_dir() + "baiduIp.txt").split(",\n")
+        for ip in ip_array:
+            ftp_ret = subprocess.Popen('ping %s -c 3' % ip, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                       shell=True)
+            ret = ftp_ret.stdout.read()
+            if ret:
+                delay_time = 0
+                re_result = re.findall(re.compile(r"time=(.*?)\sms", re.S), ret)
+                for single_ping_delay_time in re_result:
+                    delay_time+= float(single_ping_delay_time)
+                if single_ping_delay_time > 500:
+                    ip_array.remove(ip)
+            else:
+
+                ip_array.remove(ip)
+        FileUtils.write_data_to_file(FileUtils.get_project_dir() + "baiduIp.txt",",\n".join(ip_array))
+
+            # print iplist
 
 
 

@@ -18,12 +18,12 @@ class FileUtils():
     @classmethod
     def download_from_url(self, url, dir):
         # dir是本系统的相对路径
-        if url and dir:
+        if url and dir and url.encode("utf-8").startswith("http"):
             dir = FileUtils.get_project_dir() + dir
             if not os.path.exists(dir):
                 os.mkdir(dir)
             try:
-               res =        urllib.urlopen(url.encode("utf-8")).read()
+               res =urllib.urlopen(url.encode("utf-8")).read()
                # path = dir +os.sep+ url[-8:-1] + ".jpg"
                path = dir +os.sep +str(time.time())+".jpg"
                with open(path, "w") as write_file:

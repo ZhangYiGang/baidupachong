@@ -13,7 +13,7 @@ from spider.Request import Request
 from spider.FormatData import FormatData
 from Result.ParseResult import ParseResult
 from utils.FileUtil import FileUtils
-
+from spider.GetIp import GetIp
 # sys.setdefaultencoding('utf-8')
 import time
 # 如果执行的是func1，那么会返回一个func2的函数
@@ -130,12 +130,14 @@ class TestRequest(unittest.TestCase):
 
     def test_re(self):
         import re
-        result  = re.match( re.compile(r"((\d{2,3}\.){3})\d{2,3}"),"10.108.115.57")
-        print(result.groups())
+        str1 = "PING 119.63.197.151 (119.63.197.151): 56 data bytes64 bytes from 119.63.197.151: icmp_seq=0 ttl=42 time=261.126 ms\n64 bytes from 119.63.197.151: icmp_seq=1 ttl=42 time=262.297 ms\64 bytes from 119.63.197.151: icmp_seq=2 ttl=42 time=262.564 ms\n--- 119.63.197.151 ping statistics ---\n3 packets transmitted, 3 packets received, 0.0% packet loss\nround-trip min/avg/max/stddev = 261.126/261.996/262.564/0.625 ms\n"
+        result = re.findall(re.compile(r"time=(.*?)\sms",re.S), str1)
+        # result  = re.match( re.compile(r"((\d{2,3}\.){3})\d{2,3}"),"10.108.115.57")
+        print(result)
 
     def test_single_task(self):
         request = Request()
-        text = request.get_baidu_text({'word': "植物传播种子的方法"})
+        text = request.get_baidu_text({'word': "微笑狗"})
         if text:
             searchResult = ParseResult()
             formatData = FormatData()
@@ -150,3 +152,10 @@ class TestRequest(unittest.TestCase):
     def test_divide(self):
         # python的除法需要注意添加float
         print( 1 if float(4)/float(5) >0.1 else 0 )
+
+    def test_ip_fluent(self):
+        GetIp().del_unfluent_ip()
+
+    def test_json_to_csv(self):
+        from utils.JsonUtil import testcsv
+        testcsv("/Users/bupt/test/baidu/part1.txt")
