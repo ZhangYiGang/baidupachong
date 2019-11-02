@@ -81,7 +81,7 @@ class GetIp():
                 re_result = re.findall(re.compile(r"time=(.*?)\sms", re.S), ret)
                 for single_ping_delay_time in re_result:
                     delay_time+= float(single_ping_delay_time)
-                if single_ping_delay_time > 500:
+                if delay_time > 800:
                     ip_array.remove(ip)
             else:
 

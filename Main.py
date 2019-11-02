@@ -15,35 +15,55 @@ sys.setdefaultencoding('utf-8')
 ip_txt_complete = 0
 ip_array = []
 parse_error = "解析失败"
+def execute_task_array(task_array):
+    request = Request()
+    searchResult = ParseResult()
+    type_array = []
+    result_array = []
+    for single_task in task_array:
+        text = request.get_baidu_text({'word': single_task})
+        if text:
+            formatData = FormatData()
+            formatData.set_BS(text)
+            # result = formatData.get_first_non_ad()
+            result = formatData.get_article()
+            flag_has_script = formatData.get_script()
+            searchResult.set_result(result,flag_has_script)
+            type = searchResult.judge_type()
+            stastify_type_explain_string = searchResult.judge_satsify_type()
+            url_name = searchResult.judge_url_name(stastify_type_explain_string)
+            type_array.append(type)
+            result_single_list = [single_task, str(type), " ", stastify_type_explain_string]
+            result_array.append(result_single_list)
+            print(single_task + "类型是" + str(type) + "满足类型" + stastify_type_explain_string)
+        else:
+            result_single_list = [single_task, parse_error, parse_error, parse_error]
+            result_array.append(result_single_list)
+    return  result_array
+def execute_task_array_other(task_array):
+    request = Request()
+    searchResult = ParseResult()
+    type_array = []
+    result_array = []
+    for single_task in task_array:
+        text = request.get_baidu_text({'word': single_task})
+        if text:
+            formatData = FormatData()
+            formatData.set_BS(text)
+            # result = formatData.get_first_non_ad()
+            result = formatData.get_script()
+            print(single_task + "类型是" + str(result) )
 def execute():
     task_manager = GetTask()
     task_manager.get_excels()
     task_dict = task_manager.get_task_singleexcel()
     if task_dict:
-        request = Request()
-        searchResult = ParseResult()
-        type_array = []
-        result_array = []
         task_array = task_dict.values()[0]
-        for single_task in task_array:
-            text = request.get_baidu_text({'word': single_task})
-            if text:
-                formatData = FormatData()
-                formatData.set_BS(text)
-                # result = formatData.get_first_non_ad()
-                result = formatData.get_article()
-                searchResult.set_result(result)
-                type = searchResult.judge_type()
-                stastify_type_explain_string = searchResult.judge_satsify_type()
-                type_array.append(type)
-                result_single_list  = [single_task,str(type)," ", stastify_type_explain_string ]
-                result_array.append(result_single_list)
-                print(single_task + "类型是" + str(type) + "满足类型" + stastify_type_explain_string)
-            else:
-                result_single_list = [single_task,parse_error,parse_error,parse_error ]
-                result_array.append(result_single_list)
-    task_dict[task_dict.keys()[0]] = result_array
-    task_manager.set_task_result(task_dict)
+        # result_array = execute_task_array_other(task_array)
+        result_array = execute_task_array(task_array)
+
+    # task_dict[task_dict.keys()[0]] = result_array
+    # task_manager.set_task_result(task_dict)
         #     这里去处理获取失败的结果
 
 

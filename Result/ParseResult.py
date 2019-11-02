@@ -28,6 +28,7 @@ class ParseResult():
         satisfy_file = project_path + "Result" + os.sep + "satisfy.json"
         self.judge_json = json.loads(FileUtils.get_text_from_file(alading_file))
         self.satisfy_json = json.loads(FileUtils.get_text_from_file(satisfy_file))
+        self.special = False
 
     def get_type(self):
         return self.type
@@ -35,8 +36,9 @@ class ParseResult():
     """
         @:param text 处理得到的结果
     """
-    def set_result(self, result):
+    def set_result(self, result,flag_has_script):
         self.parse = result
+        self.flag_has_script = flag_has_script
         # 顺便清除所有数据，主要是类型
         self.type = 0
         self.picture_type = 0
@@ -51,12 +53,14 @@ class ParseResult():
                 for every_value in items[1].split("|"):
                     attrs_dict = {items[0]: every_value}
                     item_result = self.parse.find(html_label, attrs=attrs_dict)
-                    if item_result is not None:
+                    if item_result :
+                        if html_label=="input":
+                            self.special = True
                         has_judge_flag = True
                         print(attrs_dict)
                         break
 
-        if has_judge_flag is True:
+        if has_judge_flag is True or self.flag_has_script:
             self.type = 2
         else:
             self.type = 1
@@ -111,6 +115,9 @@ class ParseResult():
             has_music_flag = self.judge_media_type("music")
             has_video_flag = self.judge_media_type("video")
         self.satisfy_type = [self.type, has_picture_flag, has_music_flag, has_video_flag]
+        if self.special == True:
+            print "special"
+            return "spcial"
         for result_type in ParseResult.Satisfy_type_array:
             if result_type.value ==  self.satisfy_type:
                 #
@@ -133,17 +140,21 @@ class ParseResult():
                 img_size = FileUtils.get_file_size(img_path)
                 size_list.append( img_size>= big_size and ResultType.YES or  img_size<= small_size and ResultType.NO  or {ResultType.UNSURE:img_size}  )
         middle_type_count = 0
-        for result_type in size_list:
-                if result_type == ResultType.YES:
-                    self.picture_type = 1
-                    break
-                elif result_type == ResultType.NO:
-                    continue
-                else:
-                    middle_type_count+=1
-        #         中等图片个数大于1也认为是图文模式
-        if self.picture_type ==0 and middle_type_count>1:
-            self.picture_type =1
+        # for result_type in size_list:
+        #         if result_type == ResultType.YES:
+        #             self.picture_type = 1
+        #             break
+        #         elif result_type == ResultType.NO:
+        #             continue
+        #         else:
+        #             middle_type_count+=1
+        # #         中等图片个数大于1也认为是图文模式
+        # if self.picture_type ==0 and middle_type_count>1:
+        #     self.picture_type =1
+        # if self.picture_type ==0 and len(size_list)>4:
+        #     self.picture_type =1
+        if len(size_list)>0:
+            self.picture_type = 1
         return self.picture_type
 
     '''
@@ -188,6 +199,10 @@ class ParseResult():
                 if "class" in img_parent.attrs and grep_word in img_parent.attrs["class"]:
                     return False
         return True
+
+    def judge_url_name(self, stastify_type_explain_string):
+        if stastify_type_explain_string!= "special":
+            pass
 
 
 if __name__ == '__main__':

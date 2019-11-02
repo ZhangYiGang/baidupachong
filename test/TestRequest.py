@@ -137,14 +137,16 @@ class TestRequest(unittest.TestCase):
 
     def test_single_task(self):
         request = Request()
-        text = request.get_baidu_text({'word': "植物传播种子的办法"})
+        text = request.get_baidu_text({'word': "192.168.191.1"})
         if text:
             searchResult = ParseResult()
             formatData = FormatData()
             formatData.set_BS(text)
             result = formatData.get_first_non_ad()
+            has_script = formatData.get_script()
+            # formatData.get_script()
             # formatData.get_useful_judge(result)
-            searchResult.set_result(result)
+            searchResult.set_result(result,has_script)
             type = searchResult.judge_type()
             stastify_type_explain_string = searchResult.judge_satsify_type()
             print("类型是" + str(type) + "满足类型" + stastify_type_explain_string)
