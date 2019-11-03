@@ -8,6 +8,8 @@ from utils.FileUtil import FileUtils
 from spider.GetIp import GetIp
 from config.Config import Config
 import sys,os,time
+
+import traceback
 import requests
 reload(sys)
 requests.adapters.DEFAULT_RETRIES = 5
@@ -27,15 +29,17 @@ def execute_task_array(task_array):
             formatData.set_BS(text)
             # result = formatData.get_first_non_ad()
             result = formatData.get_article()
+            url = formatData.get_url()
             flag_has_script = formatData.get_script()
             searchResult.set_result(result,flag_has_script)
             type = searchResult.judge_type()
             stastify_type_explain_string = searchResult.judge_satsify_type()
-            url_name = searchResult.judge_url_name(stastify_type_explain_string)
+            url_name = searchResult.judge_url_name(url,stastify_type_explain_string)
             type_array.append(type)
-            result_single_list = [single_task, str(type), " ", stastify_type_explain_string]
+            str_type = "阿拉丁" if type==2 else "自然结果"
+            result_single_list = [single_task, str_type, url_name, stastify_type_explain_string]
             result_array.append(result_single_list)
-            print(single_task + "类型是" + str(type) + "满足类型" + stastify_type_explain_string)
+            print(single_task + "类型是" + str_type + "满足类型" + stastify_type_explain_string)
         else:
             result_single_list = [single_task, parse_error, parse_error, parse_error]
             result_array.append(result_single_list)
@@ -62,8 +66,8 @@ def execute():
         # result_array = execute_task_array_other(task_array)
         result_array = execute_task_array(task_array)
 
-    # task_dict[task_dict.keys()[0]] = result_array
-    # task_manager.set_task_result(task_dict)
+    task_dict[task_dict.keys()[0]] = result_array
+    task_manager.set_task_result(task_dict)
         #     这里去处理获取失败的结果
 
 
@@ -82,8 +86,12 @@ def get_ip():
 
 
 if __name__=="__main__":
-    Config().load_Constant()
-    get_ip()
-    execute()
+    try:
+       Config().load_Constant()
+       get_ip()
+       execute()
+    except Exception as e:
+        traceback.print_exc(file=open('error.txt', 'a+'))
+
 
     # print "a|b".split(".")

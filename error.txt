@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "Main.py", line 92, in <module>
+    execute()
+  File "Main.py", line 67, in execute
+    result_array = execute_task_array(task_array)
+  File "Main.py", line 42, in execute_task_array
+    print(single_task + "类型是" + str_type + "满足类型" + stastify_type_explain_string)
+IOError: [Errno 0] Error

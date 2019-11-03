@@ -37,8 +37,8 @@ class Request():
 
               return response.text
         else:
-            print(baidu_url+"这里有问题")
-            return None
+            print(baidu_url+"这里有问题"+"重拾关键字"+keyword)
+            return self.get_baidu_text(keyword)
 
     def get_request(self, url,headers):
         headers = dict(headers.items()+self.headers.items())

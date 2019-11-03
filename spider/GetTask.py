@@ -18,7 +18,8 @@ class GetTask():
         for dirpath, dirnames, filenames in os.walk(FileUtils.get_project_dir()):
             for file in filenames:
                 if file.endswith(".xlsx"):
-                    filepath = dirpath  + file
+                    print("现在处理文件"+file)
+                    filepath = dirpath  + os.sep+file
                     self.excel_path.append(filepath)
         self.excel_dict = dict(zip(self.excel_path, [False for i in self.excel_path]))
 

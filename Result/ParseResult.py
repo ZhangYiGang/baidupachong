@@ -15,7 +15,7 @@ import os,re
 class ParseResult():
 
     Satisfy_type_array = [ResultType.MUSIC, ResultType.MUSIC_2, ResultType.PICTURE , ResultType.ONLY_WORD, ResultType.VIDEO_AND_WORD, ResultType.VIDEO_AND_WORD_2, ResultType.ONLY_WORD1, ResultType.MUSIC_3]
-    Satisfy_type_explain_string = ["音乐1","音乐2","图片1","只有文字","视频1","视频2", "只有文字1","音乐3"]
+    Satisfy_type_explain_string = ["音乐卡","音乐卡","图片+文字","文字","视频+文字","视频=文字", "文字","音乐卡"]
     """
     @:param type 表示处理结果类型 0:未知 1:自然结果 2:阿拉丁
     """
@@ -24,11 +24,11 @@ class ParseResult():
         # Result/alading
         abs_path = os.path.abspath(__file__)
         project_path =abs_path[0:abs_path.index("Result")]
-        alading_file = project_path+"Result"+os.sep+"alading.json"
-        satisfy_file = project_path + "Result" + os.sep + "satisfy.json"
+        alading_file = project_path+"config"+os.sep+"alading.json"
+        satisfy_file = project_path + "config" + os.sep + "satisfy.json"
         self.judge_json = json.loads(FileUtils.get_text_from_file(alading_file))
         self.satisfy_json = json.loads(FileUtils.get_text_from_file(satisfy_file))
-        self.special = False
+
 
     def get_type(self):
         return self.type
@@ -38,6 +38,7 @@ class ParseResult():
     """
     def set_result(self, result,flag_has_script):
         self.parse = result
+        self.special = False
         self.flag_has_script = flag_has_script
         # 顺便清除所有数据，主要是类型
         self.type = 0
@@ -116,10 +117,10 @@ class ParseResult():
             has_video_flag = self.judge_media_type("video")
         self.satisfy_type = [self.type, has_picture_flag, has_music_flag, has_video_flag]
         if self.special == True:
-            print "special"
+            print("special")
             return "spcial"
         for result_type in ParseResult.Satisfy_type_array:
-            if result_type.value ==  self.satisfy_type:
+            if result_type.value == self.satisfy_type:
                 #
                 return ParseResult.Satisfy_type_explain_string[ParseResult.Satisfy_type_array.index(result_type)]
         return ".".join(str(self.satisfy_type))
@@ -135,10 +136,14 @@ class ParseResult():
         for img_result in img_results:
             is_in_grep_element = self.grep_picture_type(grep_words, img_result)
             if is_in_grep_element:
-                url = img_result.attrs["src"]
-                img_path = FileUtils.download_from_url(url, dir)
-                img_size = FileUtils.get_file_size(img_path)
-                size_list.append( img_size>= big_size and ResultType.YES or  img_size<= small_size and ResultType.NO  or {ResultType.UNSURE:img_size}  )
+                if "src" in img_result.attrs:
+                    url = img_result.attrs["src"]
+                    img_path = FileUtils.download_from_url(url, dir)
+                    img_size = FileUtils.get_file_size(img_path)
+                    size_list.append(
+                        img_size >= big_size and ResultType.YES or img_size <= small_size and ResultType.NO or {
+                            ResultType.UNSURE: img_size})
+
         middle_type_count = 0
         # for result_type in size_list:
         #         if result_type == ResultType.YES:
@@ -168,30 +173,9 @@ class ParseResult():
               return result.group(0)
         return None
 
-    # 获取到url 这个通常只给阿拉丁使用
-    def get_url(self):
-        # 第一个获取到的url
-        url_array= []
-        try:
-            data_log = self.parse.attrs["data-log"]
-            html_json = data_log.encode("utf-8").replace("\'","\"")
-            url_data_log = json.loads(html_json)["mu"]
-            url_array.append(url_data_log)
-        except Exception as e:
-            # 在这里处理json的解析问题
-            pass
-        content = self.parse.find("div",attrs={"class":"c-result-content"})
-        if content:
-            # 取出第一个内容
-            content = next(content.children)
-            if "rl-link-href" in content.attrs:
-               #  还有rl-link-data-url
-               url_data_href = content.attrs["rl-link-href"]
-               print(url_data_href)
-        else:
-            # tood 这里要加的是找到url
-            pass
-        pass
+
+
+
 
     def grep_picture_type(self, grep_words, img_result):
         for grep_word in grep_words.split("|"):
@@ -200,9 +184,27 @@ class ParseResult():
                     return False
         return True
 
-    def judge_url_name(self, stastify_type_explain_string):
-        if stastify_type_explain_string!= "special":
-            pass
+    def judge_url_name(self, url_link,stastify_type_explain_string):
+        if stastify_type_explain_string== "special" or url_link.encode("utf-8")=="":
+            return ""
+        elif "音乐" in stastify_type_explain_string:
+            return "音乐卡"
+        else:
+            import re
+            url =  re.match(re.compile(r".*://(.*?)/"),url_link).group(1)
+
+            if "jingyan" in url:
+                return "百度经验"
+            elif "hanyu" in url:
+                return "百度汉语"
+            elif "zhidao" in url:
+                return "百度知道"
+            elif "baike" in url:
+                return "百度百科"
+            elif "wk" in url or "wenku" in url:
+                return "百度文库"
+            return url_link
+
 
 
 if __name__ == '__main__':

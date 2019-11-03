@@ -137,19 +137,21 @@ class TestRequest(unittest.TestCase):
 
     def test_single_task(self):
         request = Request()
-        text = request.get_baidu_text({'word': "192.168.191.1"})
+        text = request.get_baidu_text({'word': "香蜜沉沉烬如霜歌曲"})
         if text:
             searchResult = ParseResult()
             formatData = FormatData()
             formatData.set_BS(text)
-            result = formatData.get_first_non_ad()
+            result = formatData.get_article()
+            url = formatData.get_url()
             has_script = formatData.get_script()
             # formatData.get_script()
             # formatData.get_useful_judge(result)
             searchResult.set_result(result,has_script)
             type = searchResult.judge_type()
             stastify_type_explain_string = searchResult.judge_satsify_type()
-            print("类型是" + str(type) + "满足类型" + stastify_type_explain_string)
+            url_name = searchResult.judge_url_name(url,stastify_type_explain_string)
+            print("类型是" + str(type) +"url是"+url_name+ "满足类型" + stastify_type_explain_string)
 
     def test_divide(self):
         # python的除法需要注意添加float
@@ -160,4 +162,11 @@ class TestRequest(unittest.TestCase):
 
     def test_json_to_csv(self):
         from utils.JsonUtil import testcsv
-        testcsv("/Users/bupt/test/baidu/part1.txt")
+        testcsv(r"G:\pythonproject\baidupachong\actual.txt1.txt")
+    def test_work(self):
+       file_array = []
+       for dirname,names,filenmes in  os.walk(FileUtils.get_project_dir()):
+           for name in filenmes:
+              if name.endswith("py"):
+                    file_array.append(dirname+os.sep+name)
+       print file_array
